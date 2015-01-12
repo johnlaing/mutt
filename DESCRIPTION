@@ -1,0 +1,9 @@
+Package: mutt
+Version: 0.0.1
+Date: 2015-01-12
+License: MIT + file LICENSE
+Description: Interface to the Mutt E-mail Client
+Title: mutt
+Author: John Laing <john.laing@gmail.com>
+Maintainer: John Laing <john.laing@gmail.com>
+SystemRequirements: The mutt program, e.g. via package mutt on Debian/Ubuntu
