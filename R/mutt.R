@@ -2,9 +2,9 @@ mutt <- function(to=c(), subject=NULL, body=NULL, body.file=NULL, body.html=FALS
     args <- character()
     if (body.html) args <- c(args, "-e", shQuote("my_hdr Content-Type: text/html"))
     if (!is.null(subject)) args <- c(args, "-s", shQuote(as.character(subject)))
-    if (!is.null(cc)) args <- c(args, rbind("-c", shQuote(as.character(cc))))
-    if (!is.null(bcc)) args <- c(args, rbind("-b", shQuote(as.character(bcc))))
-    if (length(to)) args <- c(args, "--", shQuote(to))
+    if (!is.null(cc) & length(cc) > 0) args <- c(args, rbind("-c", shQuote(as.character(cc))))
+    if (!is.null(bcc) & length(bcc) > 0) args <- c(args, rbind("-b", shQuote(as.character(bcc))))
+    if (length(to) > 0) args <- c(args, "--", shQuote(to))
 
     if (!is.null(body)) {
         stdin <- ""
