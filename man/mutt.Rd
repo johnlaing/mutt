@@ -3,7 +3,7 @@
 \title{Mutt E-mail Client}
 \description{Interface to the Mutt E-mail Client}
 \usage{
-  mutt(to=c(), subject=NULL, body=NULL, body.file=NULL, body.html=FALSE, cc=NULL, bcc=NULL, from=NULL)
+  mutt(to=c(), subject=NULL, body=NULL, body.file=NULL, body.html=FALSE, cc=NULL, bcc=NULL, from=NULL, attachments=NULL)
 }
 \arguments{
   \item{to}{vector of recipient addresses}
@@ -14,6 +14,7 @@
   \item{cc}{vector of carbon copy recipient addresses}
   \item{bcc}{vector of blind carbon copy recipient addresses}
   \item{from}{address of sender}
+  \item{attachments}{vector of files to attach}
 }
 \examples{
   \dontrun{
