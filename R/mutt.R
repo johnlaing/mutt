@@ -14,7 +14,7 @@ mutt <- function(to=c(), subject=NULL, body=NULL, body.file=NULL, body.html=FALS
         input <- NULL
     } else {
         stdin <- ""
-        input <- NULL
+        input <- ""
     }
 
     if (!is.null(from)) {
