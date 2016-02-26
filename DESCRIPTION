@@ -1,6 +1,6 @@
 Package: mutt
-Version: 0.0.2
-Date: 2015-04-30
+Version: 0.0.3
+Date: 2016-02-26
 License: MIT + file LICENSE
 Description: Interface to the Mutt E-mail Client
 Title: mutt
